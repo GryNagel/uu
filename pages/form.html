@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>Starter Template - Materialize</title>
+    <title>Accessibility examples</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,13 +12,17 @@
 </head>
 <body>
 <nav class="light-blue darken-4" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="../index.html" class="brand-logo">Logo</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="../index.html" class="brand-logo">Accessibility</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="form.html">News</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="headers.html">Header</a></li>
+            <li><a href="table.html">Table</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
-            <li><a href="form.html">News</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="headers.html">Header</a></li>
+            <li><a href="table.html">Table</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -26,40 +30,79 @@
 
 <div class="container">
     <div class="section">
-
-        <!--   Form Section   -->
         <div class="row">
-            <form class="col s12">
+            <form class="col s6">
                 <div class="row">
-                    <div class="input-field col s6">
+                    <div class="input-field col s12">
+                        <input id="first-name" type="text" class="validate">
+                        <label for="first-name" class="active">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="last-name" type="text" class="validate">
+                        <label for="last-name" class="active">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="pass" type="password" class="validate">
+                        <label for="pass" class="active">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="mail" type="email" class="validate">
+                        <label for="mail" class="active">E-mail</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="mail2" type="email" class="validate">
+                        <label for="mail2" class="active">Repeat e-mail</label>
+                    </div>
+                </div>
+                <input type="submit" value="submit" class="waves-effect waves-light btn light-blue darken-4">
+            </form>
+            <div class="col s6">
+                <h1 class="teal-text">Good</h1>
+            </div>
+        </div>
+        <div class="row">
+            <form class="col s6">
+                <div class="row">
+                    <div class="input-field col s12">
                         <input placeholder="First name" id="first_name" type="text" class="validate">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s6">
+                    <div class="input-field col s12">
                         <input id="last_name" type="text" class="validate" placeholder="Last name">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s6">
+                    <div class="input-field col s12">
                         <input id="password" type="password" class="validate">
                         <label for="password" class="active">Password</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s6">
+                    <div class="input-field col s12">
                         <input id="email" type="email" class="validate">
                         <label for="email" class="active">E-mail</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s6">
+                    <div class="input-field col s12">
                         <input id="email" type="email" class="validate">
                         <label for="email" class="active">Repeat e-mail</label>
                     </div>
                 </div>
-                <a href="#" class="waves-effect waves-light btn light-blue darken-4">Submit</a>
+                <a class="waves-effect waves-light btn light-blue darken-4">Submit</a>
             </form>
+            <div class="col s6">
+                <h1 class="red-text">Bad</h1>
+            </div>
         </div>
 
 

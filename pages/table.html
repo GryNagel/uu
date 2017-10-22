@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Accessibility examples</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<nav class="light-blue darken-4" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="../index.html" class="brand-logo">Accessibility</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="form.html">Form</a></li>
+            <li><a href="headers.html">Header</a></li>
+            <li><a href="table.html">Table</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
+            <li><a href="form.html">Form</a></li>
+            <li><a href="headers.html">Header</a></li>
+            <li><a href="table.html">Table</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <h1>People</h1>
+            <table>
+                <tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>E-mail</th>
+                    <th>Address</th>
+                    <th>Country</th>
+                    <th>Company</th>
+                </tr>
+
+                <tr>
+                    <td>Hayden</td>
+                    <td>(932) 585-8052</td>
+                    <td>tristique.aliquet.Phasellus@Duiscursus.co.uk</td>
+                    <td>1458 Quam Road</td>
+                    <td>Sri Lanka</td>
+                    <td>Nunc Sit Amet Company</td>
+                </tr>
+                <tr>
+                    <td>Dalton</td>
+                    <td>(582) 735-3197</td>
+                    <td>ultrices@venenatis.co.uk</td>
+                    <td>222-9313 Placerat Street</td>
+                    <td>Bonaire, Sint Eustatius and Saba</td>
+                    <td>Vitae Purus Gravida LLC</td>
+                </tr>
+                <tr>
+                    <td>Cruz</td>
+                    <td>(656) 599-0257</td>
+                    <td>faucibus.Morbi.vehicula@duiaugueeu.ca</td>
+                    <td>676 Arcu Road</td>
+                    <td>Uganda</td>
+                    <td>Non Enim Commodo Associates</td>
+                </tr>
+                <tr>
+                    <td>James</td>
+                    <td>(635) 911-6560</td>
+                    <td>ut.quam@Vestibulum.ca</td>
+                    <td>Ap #190-1165 Ac, Ave</td>
+                    <td>Colombia</td>
+                    <td>Vulputate Consulting</td>
+                </tr>
+                <tr>
+                    <td>Nicholas</td>
+                    <td>(301) 152-3449</td>
+                    <td>Mauris.magna@dictummi.org</td>
+                    <td>P.O. Box 824, 4260 Nisi Rd.</td>
+                    <td>France</td>
+                    <td>Justo Nec Ante PC</td>
+                </tr>
+                <tr>
+                    <td>Brandon</td>
+                    <td>(248) 117-8745</td>
+                    <td>a.odio@ipsumsodalespurus.edu</td>
+                    <td>P.O. Box 303, 158 Quam Street</td>
+                    <td>Cuba</td>
+                    <td>Morbi Sit Amet Consulting</td>
+                </tr>
+                <tr>
+                    <td>Ian</td>
+                    <td>(684) 716-7449</td>
+                    <td>pharetra.ut@montesnascetur.ca</td>
+                    <td>Ap #322-3318 Enim, Rd.</td>
+                    <td>United States Minor Outlying Islands</td>
+                    <td>Tempus Foundation</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+            <br/>
+            <br/>
+            <hr/>
+            <br/>
+            <br/>
+
+            <div style="word-break: break-all" role="grid" aria-labelledby="people">
+                <h1 id="people">People</h1>
+                <div class="">
+                <div class="row m12 hide-on-med-and-down" role="row" >
+                    <span class="col m1" role="columnheader"><strong>Name</strong></span>
+                    <span class="col m2" role="columnheader"><strong>Phone</strong></span>
+                    <span class="col m3" role="columnheader"><strong>E-mail</strong></span>
+                    <span class="col m2" role="columnheader"><strong>Address</strong></span>
+                    <span class="col m2" role="columnheader"><strong>Country</strong></span>
+                    <span class="col m2" role="columnheader"><strong>Company</strong></span>
+                </div>
+
+                <div class="row" role="row">
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Name</strong></span>
+                        <span class="col l1 m6 s6">Hayden</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Phone</strong></span>
+                        <span class="col l2 m6 s6">(932) 585-8052</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>E-mail</strong></span>
+                        <span class="col l3 m6 s6">tristique.aliquet.Phasellus@Duiscursus.co.uk</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Address</strong></span>
+                        <span class="col l2 m6 s6">1458 Quam Road</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Country</strong></span>
+                        <span class="col l2 m6 s6">Sri Lanka</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Company</strong></span>
+                        <span class="col l2 m6 s6">Nunc Sit Amet Company</span>
+                    </div>
+                </div>
+                <div class="row" role="row">
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Name</strong></span>
+                        <span class="col l1 m6 s6">Dalton</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Phone</strong></span>
+                        <span class="col l2 m6 s6">(582) 735-3197</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>E-mail</strong></span>
+                        <span class="col l3 m6 s6">ultrices@venenatis.co.uk</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Address</strong></span>
+                        <span class="col l2 m6 s6">222-9313 Placerat Street</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Country</strong></span>
+                        <span class="col l2 m6 s6">Bonaire, Sint Eustatius and Saba</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Company</strong></span>
+                        <span class="col l2 m6 s6">Vitae Purus Gravida LLC</span>
+                    </div>
+                </div>
+                <div class="row" role="row">
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Name</strong></span>
+                        <span class="col l1 m6 s6">Cruz</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Phone</strong></span>
+                        <span class="col l2 m6 s6">(656) 599-0257</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>E-mail</strong></span>
+                        <span class="col l3 m6 s6">faucibus.Morbi.vehicula@duiaugueeu.ca</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Address</strong></span>
+                        <span class="col l2 m6 s6">676 Arcu Road</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Country</strong></span>
+                        <span class="col l2 m6 s6">Uganda</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Company</strong></span>
+                        <span class="col l2 m6 s6">Non Enim Commodo Associates</span>
+                    </div>
+                </div>
+                <div class="row" role="row">
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Name</strong></span>
+                        <span class="col l1 m6 s6">James</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Phone</strong></span>
+                        <span class="col l2 m6 s6">(635) 911-6560</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>E-mail</strong></span>
+                        <span class="col l3 m6 s6">ut.quam@Vestibulum.ca</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Address</strong></span>
+                        <span class="col l2 m6 s6">Ap #190-1165 Ac, Ave</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Country</strong></span>
+                        <span class="col l2 m6 s6">Colombia</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Company</strong></span>
+                        <span class="col l2 m6 s6">Vulputate Consulting</span>
+                    </div>
+                </div>
+                <div class="row" role="row">
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Name</strong></span>
+                        <span class="col l1 m6 s6">Nicholas</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Phone</strong></span>
+                        <span class="col l2 m6 s6">(301) 152-3449</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>E-mail</strong></span>
+                        <span class="col l3 m6 s6">Mauris.magna@dictummi.org</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Address</strong></span>
+                        <span class="col l2 m6 s6">P.O. Box 824, 4260 Nisi Rd.</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Country</strong></span>
+                        <span class="col l2 m6 s6">France</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Company</strong></span>
+                        <span class="col l2 m6 s6">Justo Nec Ante PC</span>
+                    </div>
+                </div>
+                <div class="row" role="row">
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Name</strong></span>
+                        <span class="col l1 m6 s6">Brandon</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Phone</strong></span>
+                        <span class="col l2 m6 s6">(248) 117-8745</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>E-mail</strong></span>
+                        <span class="col l3 m6 s6">a.odio@ipsumsodalespurus.edu</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Address</strong></span>
+                        <span class="col l2 m6 s6">P.O. Box 303, 158 Quam Street</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Country</strong></span>
+                        <span class="col l2 m6 s6">Cuba</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Company</strong></span>
+                        <span class="col l2 m6 s6">Morbi Sit Amet Consulting</span>
+                    </div>
+                </div>
+                <div class="row" role="row">
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Name</strong></span>
+                        <span class="col l1 m6 s6">Ian</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Phone</strong></span>
+                        <span class="col l2 m6 s6">(684) 716-7449</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>E-mail</strong></span>
+                        <span class="col l3 m6 s6">pharetra.ut@montesnascetur.ca</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Address</strong></span>
+                        <span class="col l2 m6 s6">Ap #322-3318 Enim, Rd.</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Country</strong></span>
+                        <span class="col l2 m6 s6">United States Minor Outlying Islands</span>
+                    </div>
+                    <div role="gridcell">
+                        <span class="col l1 m6 s6 hide-on-large-only"><strong>Company</strong></span>
+                        <span class="col l2 m6 s6">Tempus Foundation</span>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+</div>
+
+<footer class="page-footer orange">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                UU-eksempler
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        </div>
+    </div>
+</footer>
+
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="../js/materialize.js"></script>
+<script src="../js/init.js"></script>
+
+</body>
+</html>

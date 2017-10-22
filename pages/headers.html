@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>Starter Template - Materialize</title>
+    <title>Accessibility examples</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,13 +12,17 @@
 </head>
 <body>
 <nav class="light-blue darken-4" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="../index.html" class="brand-logo">Logo</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="../index.html" class="brand-logo">Accessibility</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="form.html">News</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="headers.html">Header</a></li>
+            <li><a href="table.html">Header</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
-            <li><a href="form.html">News</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="headers.html">Header</a></li>
+            <li><a href="table.html">Header</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -26,44 +30,35 @@
 
 <div class="container">
     <div class="section">
-
-        <!--   Form Section   -->
         <div class="row">
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input placeholder="First name" id="first_name" type="text" class="validate">
+            <div class="col s6">
+                <h1> I'm a h1 header </h1>
+                <h2> I'm a h2 header </h2>
+                <h3> I'm a h3 header </h3>
+                <h4> I'm a h4 header </h4>
+                <h5> I'm a h5 header </h5>
+                <h6> I'm a h6 header </h6>
+            </div>
 
-                    </div>
-                    <div class="input-field col s6">
-                        <input id="last_name" type="text" class="validate" placeholder="Last name">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-                        <label for="disabled" class="active">Disabled</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="password" type="password" class="validate">
-                        <label for="password" class="active">Password</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="email" type="email" class="validate">
-                        <label for="email" class="active">E-mail</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="email" type="email" class="validate">
-                        <label for="email" class="active">Repeat e-mail</label>
-                    </div>
-                </div>
-            </form>
+            <div class="col s6">
+                <h1 class="teal-text">Good</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s6">
+                <h1> I'm a h1 header </h1>
+                <h3> I'm a h3 header </h3>
+                <h6> I'm a h6 header </h6>
+                <h2> I'm a h2 header </h2>
+                <h4> I'm a h4 header </h4>
+                <h5> I'm a h5 header </h5>
+            </div>
+            <div class="col s6">
+                <h1 class="red-text">Bad</h1>
+            </div>
+
+
         </div>
 
 
